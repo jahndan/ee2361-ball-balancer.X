@@ -1,0 +1,2 @@
+# don't count Makefile as language used in repo code
+nbproject/** -linguist-detectable
