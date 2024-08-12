@@ -1,0 +1,9 @@
+# IDE Artifacts
+build/**
+debug/**
+disassembly/**
+dist/**
+.generated_files/**
+
+# Other
+.DS_Store
