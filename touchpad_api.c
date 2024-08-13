@@ -17,7 +17,7 @@ void init_touchpad(void) {
     __builtin_write_OSCCONL(OSCCON & 0xbf); // unlock PPS
     RPOR2bits.RP5R = 7; // RB5->SPI1:SDO1;
     RPOR2bits.RP4R = 8; // RB4->SPI1:SCK1OUT;
-    RPOR3bits.RP7R = 9; // chip select
+    RPOR3bits.RP7R = 9; // chip select (CS)
     RPINR20bits.SDI1R = 8; // master input
     __builtin_write_OSCCONL(OSCCON | 0x40);
 
