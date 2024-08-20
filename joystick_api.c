@@ -34,7 +34,7 @@ void init_joystick(void) {
     AD1CON2bits.VCFG = 0; // AVDD & AVSS min-max
     AD1CON3bits.ADCS = 1; // clock = 2*Tcy
     AD1CON1bits.SSRC = 0b010; // sample/convert on TMR3 overflow
-    AD1CON3bits.SAMC = 10; // ? the reference manual does not elaborate on this whatsoever
+    AD1CON3bits.SAMC = 10; // ?? the reference manual does not elaborate on this whatsoever
     AD1CON1bits.FORM = 0; // unsigned integer
     AD1CON1bits.ASAM = 1; // automatic sampling
     AD1CON2bits.SMPI = 0; // interrupt every sample
